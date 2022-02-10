@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap"
+        rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Encuesta MicraCafe</title>
+</head>
+<body>
+
+    <main>
+        <section class="foto">
+            <img src="./img/micra.jpg" alt="Cafeteria">
+        </section>
+        <section class="contenedor centrar" id="inicio">
+            <h2>¡Tu opinion es muy importante! </h2>
+            <h2>Ayudanos a mejorar para ti</h2>
+            <p>Contesta esta breve encuesta y dejanos tus comentarios</p>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-iniciar">INICIAR</button>       
+        </section>
+        <section class="contenedor centrar ocultar " id="preguntas">
+            <div class="instrucciones">
+                <p>Con base en tu experiencia en MIcra Café por favor selecciona la opcion que mas se acerque a tu preferencia</p> 
+                </div>
+                <div class="preguntas">
+                    <p class="pregunta">esta es la pregunta direcatamente </p>
+                    <table class="table table-pregunta">  
+                        <tr class="opciones" style="color:white">
+                            <th>MUY MALO</th>
+                            <th>MALO</th>
+                            <th>REGULAR</th>
+                            <th>BUENO</th>
+                            <th>MUY BUENO</th>
+                        </tr>
+                        <tr>
+                            <td id="res1">😡</td>
+                            <td id="res2">😠</td>
+                            <td id="res3">😐</td>
+                            <td id="res4">😊</td>
+                            <td id="res5">😁</td>
+                        </tr>
+                    </table>
+
+                    
+                <button type="button" class="btn btn-success
+             btn-lg btn-block"> Enviar </button>
+            </div>
+        </section>
+        <br>
+        <br><br>
+        <a href="resultados.html">Ver pagina de resultados</a>
+    </main>
+
+   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="module" src="app.js"></script>
+
+    </script>
+    </body>
+</html>

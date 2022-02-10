@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap"
+        rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Resultados Micra Café</title>
+</head>
+<body>
+    
+    <main>
+        
+       
+        <section class="foto">
+            <img src="./img/micra.jpg" alt="Cafeteria">
+        </section> 
+        <section> <br>
+            <a href="index.html"> <-------Regresar a la encuesta</a>
+        
+                <div class="head-graf">
+                    <h2> Selecciona el periodo que deseas consultar</h2>
+                    <div class="fechas">
+                        <label for="fechaInicio">Inicio: </label>
+                        <input type="date" name="fechaInicio" id="fechaInicio">
+                
+                        <label for="fechaFin">Fin: </label>
+                        <input type="date" name="fechaFin" id="fechaFin">
+                    </div>
+                    <br>
+                    <div><input type="button" id="btn" value="Buscar"></div>
+                
+                </div>
+            </section>
+        
+       
+       
+        <section class="cont-graficas">
+            <div class="graficas">
+                <h1>Turno Vespertino
+                </h1>
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <div class="graficas">
+                <h1><span>Turno Matutino</span> 
+                </h1>
+                <canvas id="myChart2" width="400" height="400"></canvas>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="res.js"></script>
+</body>
+</html>

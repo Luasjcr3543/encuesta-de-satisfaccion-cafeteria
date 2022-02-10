@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /** 1rem = 10px **/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.foto {
+  text-align: center;
+}
+img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  margin: 3rem;
+  align-self: center;
+}
+
+/**********Utilidades**************/
+.contenedor {
+  margin: 1rem auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor p {
+  margin: 3rem;
+  font-size: medium;
+}
+.contenedor button {
+  align-items: center;
+}
+.centrar {
+  text-align: center;
+}
+.ocultar {
+  display: none;
+}
+.seleccion {
+  transform: scale(190%);
+}
+
+/*********TABLAS********************/
+.table-pregunta {
+  border: solid brown 2px;
+}
+td {
+  font-size: x-large;
+  cursor: pointer;
+  padding: 1rem;
+}
+td:checked {
+  background-color: palegreen;
+}
+.th-pregunta {
+  font-size: 10rem;
+}
+
+/*Preguntas*/
+.preguntas {
+  margin-top: 2rem;
+}
+.pregunta {
+  background-color: rgb(150, 46, 46);
+  color: wheat;
+  border-radius: 2px;
+  margin: 0rem !important;
+  width: 100%;
+  font-size: xx-large;
+}
+.opciones {
+  background-color: rgb(150, 46, 46, 0.5);
+}
+
+/**********Resultados**************/
+
+@media only screen and (min-width: 680px) {
+  .cont-graficas {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .head-graf {
+    padding: 2rem;
+    max-width: 500px;
+  }
+  main {
+    align-self: center;
+  }
+  img {
+    width: 20%;
+    height: 20%;
+  }
+
+  .btn-primary {
+    max-width: 20rem;
+    text-align: center;
+    align-self: center;
+  }
+  .contenedor {
+    max-width: 70rem;
+  }
+}
+
+section .graficas {
+  padding: 3rem;
+}
+section .fechas {
+  display: flex;
+  flex-direction: column;
+}
+.cont-graficas {
+  padding: 2rem;
+}
+.head-graf {
+  padding: 4rem;
+}
